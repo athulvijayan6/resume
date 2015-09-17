@@ -1,0 +1,8 @@
+\contentsline {section}{\numberline {1}10th Marks}{2}{section.1}
+\contentsline {section}{\numberline {2}12th Marks}{2}{section.2}
+\contentsline {section}{\numberline {3}JEE rank}{3}{section.3}
+\contentsline {section}{\numberline {4}NI Intern}{5}{section.4}
+\contentsline {section}{\numberline {5}ICSR project review notice}{5}{section.5}
+\contentsline {section}{\numberline {6}TI analog design contest}{6}{section.6}
+\contentsline {section}{\numberline {7}TAS}{8}{section.7}
+\contentsline {section}{\numberline {8}Shaastra coord and vol}{8}{section.8}

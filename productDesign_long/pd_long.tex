@@ -1,0 +1,212 @@
+\documentclass[a4paper,10pt]{article}
+%-----------------------------------------------------------
+\usepackage[top=0.7in, bottom=0.7in, left=0.55in, right=0.85in]{geometry}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{palatino}
+\usepackage{turnthepage}
+\usepackage{tabularx, tabulary}
+\usepackage{ctable} % for \specialrule command
+\fontfamily{SansSerif}
+\selectfont
+
+\usepackage{array}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X} % left multiline alignment
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}  % right multiline alignment
+
+\usepackage[T1]{fontenc}
+\usepackage
+%[ansinew]
+[utf8]
+{inputenc}
+
+\usepackage{color}
+\definecolor{mygrey}{gray}{0.75}
+\textheight=9.75in
+\raggedbottom
+
+\setlength{\tabcolsep}{0in}
+\newcommand{\isep}{-2 pt}
+\newcommand{\lsep}{-0.5cm}
+\newcommand{\psep}{-0.6cm}
+\renewcommand{\labelitemii}{$\circ$}
+\renewcommand{\turnthepage}{ P.T.O}
+
+\pagestyle{empty}
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\small \colorbox{mygrey}{\begin{minipage}{0.975\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\ressubheading}[3]{
+\begin{tabular*}{6.62in}{l @{\extracolsep{\fill}} r}
+    \textsc{{\textbf{#1}}} & \textsc{\textit{[#2]}} \\
+\end{tabular*}\vspace{-8pt}}
+%-----------------------------------------------------------
+
+\begin{document}
+% \hspace{0.5cm}\\[-0.2cm]
+
+\indent
+\begin{tabularx}{0.99\textwidth}{b{0.5\textwidth} p{0.15\textwidth} R}
+    \specialrule{.05em}{1em}{0em}
+    \begin{minipage}{\textwidth}
+    \vspace{30pt}
+        {\fontsize{16pt}{1em}\selectfont \textbf ATHUL VIJAYAN} \hspace{10pt}{\fontsize{8pt}{1em}\selectfont \textbf - PR Number: 22/ED/16/004}\\
+        {\large \textbf ED11B004, Department Of Engineering Design, IIT Madras}
+    \end{minipage} & &
+    \begin{minipage}[l]{.1\textwidth}%
+        \vspace{5pt}
+        \includegraphics[width=\textwidth]{../iitmlogo.png}
+    \end{minipage}\\
+
+    \specialrule{.1em}{.05em}{.05em}
+\end{tabularx}
+
+\resheading{\textbf{EDUCATION} }\\[\lsep]
+    \\
+
+    \indent \begin{tabularx}{0.97\textwidth}{ X  p{3.4cm}  p{2.3cm} p{2cm} }
+    \hline
+    \textbf{Course/ Examination} & \textbf{Institute} & \textbf{Year} & \textbf{CGPA / \%} \\
+    \hline
+    $5^{th}$ Year Dual Degree in Dept. of Engineering Design & IIT Madras & 2011-present & 6.95\\
+    All India Senior School Certificate Examination (AISSCE) & JNV Idukki, Kerala & 2009 & 92\\
+    Central Board of Secondary Education (CBSE) & JNV Idukki, Kerala & 2007 & 91\\
+    \hline
+    \end{tabularx}
+    \\
+
+
+\resheading{\textbf{FIELDS OF INTEREST} }\\[\lsep]
+    \begin{itemize}
+        \item \noindent Product Design, Embedded circuit design, Algorithms and Programming, Internet of Things, Machine Learning and Data mining.
+    \end{itemize}
+
+\resheading{\textbf{PROFESSIONAL EXPERIENCE AND IP} }\\[\lsep]
+    \begin{itemize}
+            \item \textbf{6 Months internship at National Instruments, Bangalore}: Research towards 5th Generation wireless communication.
+        \begin{itemize}
+            \vspace{-5pt}
+            \item \textbf{Zero Down Time Cognitive Radio}: A novel improvement to the classical concept of cognitive radio is formulated and implemented in RF hardware.
+            \item Developed a modular, user-friendly implementation of point to point wireless communication using \textbf{Software Defined Radio (SDR)} and LabVIEW.
+            \item \textbf{Published a \textit{white paper}} - a well organized tutorial on wireless communication and signal processing.
+        \end{itemize}
+        \vspace{-5pt}
+        \item \textbf{2 Months internship at Wiitronics}- A startup in IIT Madras Research park working on Internet of Things solutions.
+        \vspace{-5pt}
+        \begin{itemize}
+            \setlength{\itemsep}{1pt}
+            \item Worked on a smart car parking solution. Developed mesh networked sensors to detect the presence of car and alert the cloud server.
+            \item Gained experience on XBee mesh networking, Raspberry Pi, Django, MySQL, Embedded circuits and PCB design
+        \end{itemize}
+        \vspace{-5pt}
+        \item Designed improved drying mechanism for washing machines.
+        \begin{itemize}
+            \vspace{-5pt}
+            \item Made a proof of concept for an alternate drying mechanism in washing machines sponsored by \textbf{Whirpool, India} in which we improved drying rate by \textbf{two times}.
+            \item Super-absorbent polymers are used for improving drying mechanism in washing machines. Filed for \textbf{provisional patent through IC\&SR, IIT Madras} under \textbf{Patent ID: 146/CHE/2015}.
+        \end{itemize} 
+    \end{itemize}
+
+\resheading{\textbf{PROJECTS} }\\[\lsep]
+    \begin{itemize}
+        \item Final year project in \textbf{Pattern recognition models} under \textbf{Prof. Hema A Murthy, CSE IITM} in collaboration with \textbf{Sur's Lab of Neuroscience, MIT}.
+        \begin{itemize}
+            \vspace{-5pt}
+            \item Develops Statistical models for data from various experiments in Neuroscience conducted in \textbf{Mriganka Sur's lab, MIT}.
+            \item Formulates and implements efficient models for \textbf{Big Data sets}.
+        \end{itemize}
+
+        \vspace{-5pt}
+        \item \textbf{Smart Library Management Project} under \textit{IC\&SR Student innovation project}: An Internet of things project aimed at connecting each books in a library to internet.
+        \vspace{-5pt}
+        \begin{itemize}
+            \setlength{\itemsep}{1pt}
+            \item RFID reader integrated into each book shelf tracks all the books in the shelf. With this system we can locate every book in a library in real-time.
+        \end{itemize}
+        \vspace{-5pt}
+        \item \textbf{Driver sleep alert system using EEG and head movements}: A novel wearable technology which reads the brain activity as EEG signals and head movements of driver to estimate fatigue level.
+        \vspace{-5pt}
+        \begin{itemize}
+            \item Used Bluetooth to send the sensor data to a computing device like smart phone for utilizing its computation potential.
+            \item The product is a stylish headband which will alert the driver in case of drowsy driving. 
+        \end{itemize}                    
+        \vspace{-5pt}
+        \item \textbf{Differential drive Line follower robot}: Built a fast and smooth differential drive robot which detects contrasting lines in the floor and follow the line using a PID algorithm. The robot won third place in inter-hostel competition.
+        \vspace{-5pt}
+        \item \textbf{Handwriting recognition of Telugu characters}: Used Gaussian Mixture Models (GMM)and Hidden Markov Models (HMM) for online Handwriting recognition and compared the results.
+        \vspace{-5pt}
+        \item \textbf{Speaker Identification}: Used HMMs to form sequential models for speaker identification.
+        \vspace{-5pt}
+        \item \textbf{Spoken digit recognition}: Used HMMs for individual digit recognition from utterances. 
+        \vspace{-5pt}
+        \item \textbf{Image classification}: Developed brain inspired algorithm for image classification.
+        \begin{itemize}
+        \vspace{-5pt}
+            \item Formulated and implemented a \textbf{brain inspired cascading algorithm} for image classification.
+            \item Performance of various feature extraction methods are compared using \textbf{GMMs, HMMs, SVM and Deep learning (CNN)}.            
+        \end{itemize}
+    \end{itemize}
+
+
+\resheading{\textbf{CO-CURRICULAR ACTIVITIES} }\\[\lsep]
+    \begin{itemize}
+        \item Member of the team represented IIT Madras for \textbf{ABU Robocon 2013} - An International robotics competition.
+        \begin{itemize}
+            \vspace{-5pt}
+            \item Team IIT Madras was awarded `\textbf{Fastest Job Completing Robot}' in the national level for the event.
+            \item  Worked in Electrical section of team. Specialized in circuit design,component selection, PCB Design.
+            \vspace{-5pt}
+        \end{itemize}
+        \item Attended \textbf{National Communications Conference 2015, IIT Bombay}.
+        \vspace{-5pt}
+        \item Created a \textbf{Content Management Website for blogging and data sharing} under \hspace{3pt}\url{www.candyflip.in} . The blog topics include statistical analysis and Embedded systems.
+        \vspace{-5pt}
+        \item Participated in \textbf{Texas Instruments India Analog Design Contest 2014} with two other team members.
+        \vspace{-5pt}       
+        \item Conducted a PCB Design workshop for enthusiasts in the Institute.
+        \vspace{-5pt}
+        \item Developed circuits and PCBs for teaching purposes with Prof.Natarajan (Dept.of Physics, IIT Madras).
+    \end{itemize}
+
+
+\resheading{\textbf{SKILLS} }\\[\lsep]
+    \begin{itemize}
+        \item \textbf{Programming}: C/ C++, Python, MATLAB, R, LabVIEW, MySQL, HTML, CSS, Django Web Framework, \LaTeX.
+        \vspace{-5pt}
+        \item \textbf{Electrical}: Embedded Systems - Arduino,  AVR Microcontrollers, PIC,  Raspberry Pi.\\
+        Wireless - Worked with Bluetooth, XBee, RF transciever, RFID.\\
+        Electronics, Digital Circuit design, PCB Design in Cadsoft Eagle.
+        \vspace{-5pt}
+        \item \textbf{Designing and Modelling}: Adobe Photoshop, Adobe Illustrator, Autodesk Inventor.
+    \end{itemize}
+    
+\resheading{\textbf{RELEVANT COURSES} }\\[\lsep]
+\begin{itemize}
+    \item  \textbf{Electrical}: Analog and Digital circuits, Application of Microprocessors, Basic Electrical Sciences, Mechatronics.
+    \vspace{-5pt}
+    \item \textbf{Statistical analysis}: Multivariate data analysis, Pattern Recognition, Applied Time Series, Mathematical Statistics, Process Optimization, Speech Technology, Algorithms and Data Structures, Computational Neuroscience, Digital Image processing.
+
+    \vspace{-5pt}
+    \item \textbf{Product Design}: Functional and Conceptual Design, Human Factors in Design, Design for X, Product Design Lab.
+\end{itemize}
+
+\resheading{\textbf{POSITIONS OF RESPONSIBILITY} }\\[\lsep]
+    \begin{itemize}
+        \item \textbf{Graphic Design Coordinator} for Shaastra 2013, annual technical festival of 
+        IIT Madras.
+        \vspace{-5pt}
+        \begin{itemize}
+            \item Shaped a sense of good designs and gained experience in print design and web/ UI design.\vspace{-5pt}
+        \end{itemize}
+        \item \textbf{Technical Affairs secretary} of Ganga Hostel during 2013-2014.
+        \vspace{-5pt}
+            \begin{itemize}
+            \item  Ganga placed second in manual robotics and third in autonomous robotics in intra-hostel technical competitions under my leadership.
+            \item Conducted training sessions in various technical areas like Robotics, Embedded System, Web development, Linux etc. I have authored an AVR Programming  Tutorial series for the same purpose.\vspace{-5pt}
+            \end{itemize}
+        \item Volunteer for Aerobotics event in Shaastra 2012.
+    \end{itemize}
+
+\end{document}
+

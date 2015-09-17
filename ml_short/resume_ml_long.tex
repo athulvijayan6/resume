@@ -1,0 +1,150 @@
+\documentclass[a4paper,10pt]{article}
+%-----------------------------------------------------------
+\usepackage[top=0.2in, bottom=0.2in, left=0.55in, right=0.85in]{geometry}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{palatino}
+\usepackage{turnthepage}
+\usepackage{tabularx, tabulary}
+\usepackage{ctable} % for \specialrule command
+\fontfamily{SansSerif}
+\selectfont
+
+\usepackage{array}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X} % left multiline alignment
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}  % right multiline alignment
+
+\usepackage[T1]{fontenc}
+\usepackage
+%[ansinew]
+[utf8]
+{inputenc}
+
+\usepackage{color}
+\definecolor{mygrey}{gray}{0.75}
+\textheight=9.75in
+\raggedbottom
+
+\setlength{\tabcolsep}{0in}
+\newcommand{\isep}{-2 pt}
+\newcommand{\lsep}{-0.5cm}
+\newcommand{\psep}{-0.6cm}
+\renewcommand{\labelitemii}{$\circ$}
+\renewcommand{\turnthepage}{ P.T.O}
+
+\pagestyle{empty}
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\small \colorbox{mygrey}{\begin{minipage}{0.975\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\ressubheading}[3]{
+\begin{tabular*}{6.62in}{l @{\extracolsep{\fill}} r}
+    \textsc{{\textbf{#1}}} & \textsc{\textit{[#2]}} \\
+\end{tabular*}\vspace{-8pt}}
+%-----------------------------------------------------------
+
+\begin{document}
+% \hspace{0.5cm}\\[-0.2cm]
+
+\indent
+\begin{tabularx}{0.99\textwidth}{b{0.5\textwidth} p{0.15\textwidth} R}
+    \specialrule{.05em}{1em}{0em}
+    \begin{minipage}{\textwidth}
+    \vspace{20pt}
+        {\fontsize{12pt}{1em}\selectfont \textbf ATHUL VIJAYAN} \hspace{10pt}{\fontsize{8pt}{1em}\selectfont \textbf - PR Number: 22/ED/16/004}\\
+        { \textbf ED11B004, Department Of Engineering Design, IIT Madras}
+    \end{minipage} & &
+    \begin{minipage}[l]{.1\textwidth}%
+        \vspace{5pt}
+        \includegraphics[width=0.8\textwidth]{../iitmlogo.png}
+    \end{minipage}\\
+
+    \specialrule{.1em}{.05em}{.05em}
+\end{tabularx}
+
+\resheading{\textbf{EDUCATION} }\\[\lsep]
+    \\
+
+    \indent \begin{tabularx}{0.97\textwidth}{ X  p{3.4cm}  p{2.3cm} p{2cm} }
+    \hline
+    \textbf{Course/ Examination} & \textbf{Institute} & \textbf{Year} & \textbf{CGPA / \%} \\
+    \hline
+    $5^{th}$ Year Dual Degree in Dept. of Engineering Design & IIT Madras & 2011-present & 6.95\\
+    All India Senior School Certificate Examination (AISSCE) & JNV Idukki, Kerala & 2009 & 92\\
+    Central Board of Secondary Education (CBSE) & JNV Idukki, Kerala & 2007 & 91\\
+    \hline
+    \end{tabularx}
+    \\
+
+
+\resheading{\textbf{FIELDS OF INTEREST} }\\[\lsep]
+    \begin{itemize}
+        \item \noindent Machine Learning and Data mining, Algorithms and Programming, Product Design, Internet of Things.
+    \end{itemize}
+
+\resheading{\textbf{RELEVANT COURSES} }\\[\lsep]
+\begin{itemize}
+    \item \textbf{Statistical analysis}: Multivariate data analysis, Pattern Recognition, Applied Time Series, Mathematical Statistics.
+    \vspace{-5pt}
+    \item \textbf{Computer Science}: Speech Technology, Algorithms and Data Structures, Computational Neuroscience, Digital Image processing, Process Optimization.
+    \vspace{-5pt}
+\end{itemize}
+
+\resheading{\textbf{PROJECTS} }\\[\lsep]
+    \begin{itemize}
+        \item Final year project in \textbf{Pattern recognition models} under \textbf{Prof. Hema A Murthy, CSE IITM} in collaboration with \textbf{Sur's Lab of Neuroscience, MIT}.
+        \begin{itemize}
+            \vspace{-5pt}
+            \item Develops Statistical models for data from various experiments in Neuroscience conducted in \textbf{Mriganka Sur's lab, MIT}.
+            \item Formulates and implements efficient models for \textbf{Big Data sets}.
+            \vspace{-5pt}
+        \end{itemize}        
+        \item \textbf{Handwriting recognition of Telugu characters}: Used Gaussian Mixture Models (GMM)and Hidden Markov Models (HMM) for online Handwriting recognition and compared the results.
+        \vspace{-5pt}
+        \item \textbf{Speaker Identification}: Used HMMs to form sequential models for speaker identification.
+        \vspace{-5pt}
+        \item \textbf{Spoken digit recognition}: Used HMMs for individual digit recognition from utterances. 
+        \vspace{-5pt}
+        \item \textbf{Image classification}: Developed brain inspired algorithm for image classification.
+        \begin{itemize}
+        \vspace{-5pt}
+            \item Formulated and implemented a \textbf{brain inspired cascading algorithm} for image classification.
+            \item Performance of various feature extraction methods are compared using \textbf{GMMs, HMMs, SVM and Deep learning (CNN)}.
+            \vspace{-5pt}           
+        \end{itemize}        
+        \item \textbf{Smart Library Management Project} under \textit{IC\&SR Student innovation project}: An Internet of things project aimed at connecting each books in a library to internet.
+        \vspace{-5pt}
+        \item \textbf{Driver sleep alert system using EEG and head movements}: A novel wearable technology which reads the brain activity as EEG signals and head movements of driver to estimate fatigue level.
+    \end{itemize}
+
+\resheading{\textbf{PROFESSIONAL EXPERIENCE AND IP} }\\[\lsep]
+    \begin{itemize}
+        \item \textbf{Internship at National Instruments, Bangalore}: Research towards 5th Generation wireless communication.\vspace{-5pt}        
+        \item \textbf{Internship at Wiitronics}- A startup in IIT Madras Research park working on Internet of Things solutions. \vspace{-5pt}        
+        \item Designed improved drying mechanism for washing machines. Filed for \textbf{provisional patent through IC\&SR, IIT Madras} under \textbf{Patent ID: 146/CHE/2015}.
+    \end{itemize}
+\resheading{\textbf{SKILLS} }\\[\lsep]
+    \begin{itemize}
+        \item \textbf{Programming}: C/ C++, Python, MATLAB, R, LabVIEW, MySQL, HTML, CSS, Django Web Framework, \LaTeX.
+        \vspace{-5pt}
+    \end{itemize}
+
+
+\resheading{\textbf{CO-CURRICULAR ACTIVITIES} }\\[\lsep]
+    \begin{itemize}
+        \item Created a \textbf{Content Management Website for blogging and data sharing} under \hspace{3pt}\url{www.candyflip.in} . The blog topics include statistical analysis and Embedded systems.
+        \vspace{-5pt}
+        \item Member of the team represented IIT Madras for \textbf{ABU Robocon 2013} - An International robotics competition.
+        \vspace{-5pt}
+        \item Participated in \textbf{Texas Instruments India Analog Design Contest 2014} with two other team members.
+    \end{itemize} 
+\resheading{\textbf{POSITIONS OF RESPONSIBILITY} }\\[\lsep]
+    \begin{itemize}
+        \item \textbf{Graphic Design Coordinator} for Shaastra 2013, annual technical festival of 
+        IIT Madras.
+        \vspace{-5pt}
+        \item \textbf{Technical Affairs secretary} of Ganga Hostel, IIT Madras.
+    \end{itemize}
+
+\end{document}
+
